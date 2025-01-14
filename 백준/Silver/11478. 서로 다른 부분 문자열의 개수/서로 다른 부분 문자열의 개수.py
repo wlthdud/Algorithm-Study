@@ -2,7 +2,7 @@ S = input()
 result = set()
 
 for i in range(len(S)):
-    for j in range(len(S)):
-        result.add(S[j:j+i])
+    for j in range(i+1, len(S)+1):
+        result.add(S[i:j])
 
 print(len(result))
